@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio page</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body id="home" class="font-nunito ">
+<!--Header-->
+<header  class="h-[50vh] lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden ">
+    <!--nav bar-->
+    <nav class="fixed top-0  w-full bg-white dark:bg-slate-900 z-30">
+        <div class="container md:mx-10 py-5 flex justify-between ">
+            <!--logo-->
+           <a href="#home">
+            <div class="flex items-center gap-3 cursor-pointer">
+                <img class="w-8" src="/Images/logo.png" alt="">
+                <p class="text-2xl font-bold text-indigo-700 dark:text-white">Portwind</p>
+            </div>
+           </a>
+            <ul class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 text-[20px] ">
+               <li class="hover:text-gray-400">
+                <a href="#home">Home </a>
+               </li> 
+               <li class="hover:text-gray-400">
+                <a href="#about">About Us</a>
+               </li> 
+               <li class="hover:text-gray-400">
+                <a href="#services">Services</a>
+               </li> 
+               <li class="hover:text-gray-400">
+                <a href="#works">Works</a>
+               </li> 
+               <li class="hover:text-gray-400">
+                <a href="#contact">Contact</a>
+               </li> 
+            </ul>
+            <img id="moon" class="w-5 cursor-pointer hidden md:block" src="/Images/moon.png" alt="">
+            <div id="hamburger" class=" space-y-1 cursor-pointer md:hidden ">
+               <div class="w-6 h-1 bg-gray-950 dark:bg-gray-200"></div> 
+               <div class="w-6 h-1 bg-gray-950 dark:bg-gray-200"></div> 
+               <div class="w-6 h-1 bg-gray-950 dark:bg-gray-200"></div> 
+            </div>
+            <ul id="menu" class=" text-black text-[34px] bg-slate-400 absolute top-0 left-0 w-full  p-11 rounded-b-3xl space-y-3 text-center h-[52vh] hidden">
+                <div id="cancel" class="absolute top-0 left-4 "><p class="text-[40px]">x</p></div>
+                <li class="hover:text-gray-400">
+                 <a href="#home">Home </a>
+                </li> 
+                <li class="hover:text-gray-400">
+                 <a href="#about">About Us</a>
+                </li> 
+                <li class="hover:text-gray-400">
+                 <a href="#services">Services</a>
+                </li> 
+                <li class="hover:text-gray-400">
+                 <a href="#works">Works</a>
+                </li> 
+                <li class="hover:text-gray-400">
+                 <a href="#contact">Contact</a>
+                </li> 
+             </ul>
+        </div>
+    </nav>
+    
+<!--intro section-->
+    <img class=" absolute right-0 bottom-0 h-[80%] object-cover lg:left-0 mx-auto " src="/Images/man.png" alt="">
+    
+    <div class="hidden lg:block absolute  bg-indigo-900 h-[35rem] w-[35rem] rounded-full left-0 right-0 mx-auto -bottom-[25%] -z-10 "></div>
+
+    <div class="absolute top-[34%] text-[26px] left-5 md:left-24 md:text-[40px] lg:left-10 lg:text-[50px] xl:left-32 font-bold">
+        <span class="text-gray-600 dark:text-white">Freelance</span>
+        <p id="autotype" class="text-red-500"></p>
+    </div>
+
+    <div class="hidden lg:block absolute top-[40%] right-10 w-[30%] text-justify bg-white dark:bg-slate-900 dark:shadow-slate-700 shadow-md p-5 rounded-lg">
+        <h1 class="font-bold text-[20px] pb-2 text-gray-600 dark:text-gray-300">Hi, I'm OJ</h1>
+        <p class="text-sm text-gray-500 pb-2 dark:text-gray-400">A Passionate and detail-oriented web designer with 5 years of experience creating visually stunning and user-friendly websites. Dedicated to delivering high-quality designs that exceed client expectations and drive business results. </p>
+        <a class="bg-gray-500 dark:bg-indigo-700 p-1 text-white font-semibold rounded-lg hover:bg-gray-300 dark:hover:bg-indigo-500 transition duration-500 " href="#contact">Hire Me</a>
+    </div>
+</header>
+
+  
+    <!--ABout-->
+    <section id="about" class="w-full pt-28 lg:pt-32 flex items-center px-5  md:px-16 flex-col-reverse lg:flex-row dark:bg-gray-900 dark:text-gray-200">
+        <!--left-->
+        <div class=" relative">
+            <img class="absolute top-0 left-0 h-[25%] w-[50%] -z-10" src="/Images/dots.png" alt="">
+        
+        <div class="h-full ">
+            <img class="h-full rounded-full" src="/Images/portrait.png" alt="">
+        </div>
+    </div>
+
+    <!--right -->
+    <div class=" lg:pl-20 ">
+        <h1 class="text-[20px] font-bold text-indigo-700 pb-4 ">About Me</h1>
+        <h3 class=" text-[40px] dark:text-gray-300">Better Design</h3>
+        <h3 class=" text-[40px] dark:text-gray-300">Beter Experience</h3>
+        <p class="text-gray-500 text-[20px] pb-4 dark:text-gray-300">I design and build digital products. I'm also a multi-discilinary maker with over 5 years of experiences in wide range of design disciplines.</p>
+
+        <div class="pb-4">
+            <h4  class="text-gray-500 text-[20px] dark:text-gray-300">HTML</h4>
+            <div class="w-full h-[5px] bg-gray-200 rounded-full"><div class="w-full h-[5px] bg-indigo-600 rounded-full"></div></div>
+        </div>
+
+        <div class="pb-4">
+            <h4  class="text-gray-500 text-[20px] dark:text-gray-300">Javascrpt</h4>
+            <div class="w-full h-[5px] bg-gray-200  rounded-full "><div class="w-[70%] h-[5px] bg-indigo-600 rounded-full"></div></div>
+        </div>
+
+        <div class="pb-10 lg:pb-0">
+            <h4  class="text-gray-500 text-[20px] dark:text-gray-300">React</h4>
+            <div class="w-full h-[5px] bg-gray-200 rounded-full"><div class="w-[50%] h-[5px] bg-indigo-600 rounded-full"></div></div>
+        </div>        
+    </div>       
+    </section>
+
+    <!--Services-->
+    <section id="services" class=" pt-28 lg:pt-32 lg:px-16 dark:bg-slate-900">
+        <div class="flex flex-col items-center">
+            <h1 class="text-[20px] text-indigo-700 font-bold">SERVICES</h1>
+            <h2 class="text-[30px] dark:text-gray-300 text-gray-700 ">What do I Offer?</h2>
+            <p class="text-[20px] text-gray-500 dark:text-gray-200 w-[70%] lg:w-1/2 text-center">My approach to website design is to create a website that strengthens your company's brand while ensuring ease of use and simplicity for your audience</p>
+        </div>
+
+        <!--Card Items-->
+        <div class="pt-5 pb-5 px-10  flex flex-wrap items-center justify-center gap-5">
+             <!--Card 1-->
+            <div class="shadow-lg dark:shadow-gray-600 p-5 w-full md:w-[30%]">
+                <img class="w-10" src="/Images/icon.png" alt="">
+                <h3 class="text-[20px] font-bold pt-2 dark:text-gray-200">UI/UX Design</h3>
+                <p class="text-[16] text-gray-600 dark:text-gray-200 ">I specailize in creating interactive websites for individuals and small businesses</p>
+                <a href="#"><p class="text-[16px] text-indigo-700 font-bold">Read More</p></a>
+            </div>
+ <!--Card 2-->
+            <div class="shadow-lg dark:shadow-gray-600 p-5 w-full md:w-[30%]">
+    <img class="w-10" src="/Images/icon.png" alt="">
+    <h3 class="text-[20px] font-bold pt-2 dark:text-gray-200">UI/UX Design</h3>
+    <p class="text-[16] text-gray-600 dark:text-gray-200 ">I specailize in creating interactive websites for individuals and small businesses</p>
+    <a href="#"><p class="text-[16px] text-indigo-700 font-bold">Read More</p></a>
+        </div>
+ <!--Card 3-->
+ <div class="shadow-lg dark:shadow-gray-600 p-5 w-full md:w-[30%]">
+    <img class="w-10" src="/Images/icon.png" alt="">
+    <h3 class="text-[20px] font-bold pt-2 dark:text-gray-200">UI/UX Design</h3>
+    <p class="text-[16] text-gray-600 dark:text-gray-200 ">I specailize in creating interactive websites for individuals and small businesses</p>
+    <a href="#"><p class="text-[16px] text-indigo-700 font-bold">Read More</p></a>
+</div>
+ <!--Card 4-->
+ <div class="shadow-lg dark:shadow-gray-600 p-5 w-full md:w-[30%]">
+    <img class="w-10" src="/Images/icon.png" alt="">
+    <h3 class="text-[20px] font-bold pt-2 dark:text-gray-200">UI/UX Design</h3>
+    <p class="text-[16] text-gray-600 dark:text-gray-200 ">I specailize in creating interactive websites for individuals and small businesses</p>
+    <a href="#"><p class="text-[16px] text-indigo-700 font-bold">Read More</p></a>
+</div>
+ <!--Card 5-->
+ <div class="shadow-lg dark:shadow-gray-600 p-5 w-full md:w-[30%]">
+    <img class="w-10" src="/Images/icon.png" alt="">
+    <h3 class="text-[20px] font-bold pt-2 dark:text-gray-200">UI/UX Design</h3>
+    <p class="text-[16] text-gray-600 dark:text-gray-200 ">I specailize in creating interactive websites for individuals and small businesses</p>
+    <a href="#"><p class="text-[16px] text-indigo-700 font-bold">Read More</p></a>
+</div>
+ <!--Card 6-->
+ <div class="shadow-lg dark:shadow-gray-600 p-5 w-full md:w-[30%]">
+    <img class="w-10" src="/Images/icon.png" alt="">
+    <h3 class="text-[20px] font-bold pt-2 dark:text-gray-200">UI/UX Design</h3>
+    <p class="text-[16] text-gray-600 dark:text-gray-200 ">I specailize in creating interactive websites for individuals and small businesses</p>
+    <a href="#"><p class="text-[16px] text-indigo-700 font-bold">Read More</p></a>
+</div>
+        </div>
+    </section>
+
+     <!--Portfolio works and projectss-->
+     <section id="works" class="mx-auto pt-32 dark:bg-slate-900">
+        <div class="flex flex-col items-center">
+            <h1 class="text-[20px] text-indigo-700 font-bold">PORTFOLIO</h1>
+            <h2 class="text-[30px] text-gray-700 dark:text-gray-200">Works and Projects</h2>
+            <p class="text-[20px] text-gray-500 dark:text-gray-200 w-[70%] lg:w-1/2 text-center">I help designers, small agencies and bussinesses bring their idea to life. Powered by Figma VS Code and coffee. I turn your requirements into a well designed website</p>
+        </div>
+
+        <!--projects-->
+        <div class="p-5 flex justify-center flex-wrap px-16 ">
+             <!--Card 1-->
+            <div class="s p-5 w-full md:w-1/2 lg:w-[30%]">
+                <img class="w-full" src="/Images/item.png" alt="">
+               
+            </div>
+ <!--Card 2-->
+            <div class=" p-5 w-full md:w-1/2 lg:w-[30%]">
+                <img class="w-full" src="/Images/item.png" alt="">
+              
+            </div>
+ <!--Card 3-->
+            <div class=" p-5 w-full md:w-1/2 lg:w-[30%]">
+                <img class="w-full" src="/Images/item.png" alt="">
+               
+            </div>
+ <!--Card 4-->
+            <div class="p-5 w-full md:w-1/2 lg:w-[30%]">
+                <img class="w-full" src="/Images/item.png" alt="">
+                
+               
+            </div>
+ <!--Card 5-->
+            <div class=" p-5 w-full md:w-1/2 lg:w-[30%]">
+                <img class="w-full" src="/Images/item.png" alt="">
+             
+            </div>
+ <!--Card 6-->
+            <div class="p-5 w-full md:w-1/2 lg:w-[30%]">
+                <img class="w-full" src="/Images/item.png" alt="">
+           
+            </div>
+             <!--Card 7-->
+             <div class=" p-5 w-full md:w-1/2 lg:w-[30%]">
+                <img class="w-full" src="/Images/item.png" alt="">
+           
+            </div>
+             <!--Card 8-->
+             <div class=" p-5 w-full md:w-1/2 lg:w-[30%]">
+                <img class="w-full" src="/Images/item.png" alt="">
+           
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section id="contact" class="mx-auto pt-28 dark:bg-slate-900">
+        <div class="flex flex-col items-center">
+            <h1 class="text-[20px] text-indigo-700 font-bold">CONTACT</h1>
+            <h2 class="text-[30px] text-gray-700  dark:text-gray-300">Have a question?</h2>
+            <p class="text-[20px] text-gray-500 w-[70%] lg:w-1/2 text-center dark:text-gray-200">Do you have an idea? Let's discuss it and see what we can do together</p>
+        </div>
+
+        <!--form-->
+        <form class="flex flex-col pt-5 mx-8 items-center  pb-10 " action="">
+            <input class="w-full md:w-1/2  ring-1 ring-indigo-300 p-5 text-[20px] rounded-lg mb-5 dark:bg-slate-800 dark:ring-0 dark:text-white" type="text" placeholder="Name Surname">
+            <input class="w-full md:w-1/2  ring-1 ring-indigo-300 p-5 text-[20px] rounded-lg mb-5 dark:bg-slate-800 dark:ring-0 dark:text-white"  type="text" placeholder="Email">
+            <textarea class="w-full md:w-1/2  ring-1 ring-indigo-300 p-5 text-[20px] rounded-lg mb-10 dark:bg-slate-800 dark:ring-0 dark:text-white" name="" id="" cols="=30" rows="10" placeholder="Message"></textarea>
+            <button class="w-[50%] text-white text-[30px] bg-indigo-600 py-4 rounded-md cursor-pointer hover:bg-indigo-300 transition duration-500 ">Submit</button>
+        </form>
+    </section>
+
+    <!--Footer-->
+    <footer class="">
+        <nav class="  w-full bg-gray-800">
+            <div class="container md:mx-10 py-5 flex justify-between ">
+                 <!--logo-->
+           <a href="#home">
+            <div class="flex items-center gap-3 cursor-pointer">
+                <img class="w-8" src="/Images/logo.png" alt="">
+                <p class="text-2xl font-bold text-indigo-700">Portwind</p>
+            </div>
+           </a>
+        
+
+                <span class="hidden md:block text-[16px] text-white">© 2024 Portwind. Design with ♥ by OJ</span>
+
+                <img class="w-5 cursor-pointer hidden md:block" src="/Images/moon.png" alt="">
+
+                
+               <div class="  flex gap-2 ">
+                <img class="w-4 cursor-pointer" src="/Images/facebook.png" alt="">
+                <img class="w-4 cursor-pointer" src="/Images/instagram.png" alt="">
+                <img class="w-4 cursor-pointer" src="/Images/linkedin.png" alt="">
+                <img class="w-4 cursor-pointer" src="/Images/twitter.png" alt="">
+               </div>
+
+        </nav>
+    </footer>
+<script src="/src/app.js"></script>
+</body>
+</html>
